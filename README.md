@@ -24,11 +24,11 @@ This README, all of my repositories, and my personal blog are written entirely w
 
 I publish articles on software architecture and AI engineering at [marcelomiyake.com.br](https://marcelomiyake.com.br/):
 
-- *Cheaper Models and a Strong Harness: Building Distributed Systems in Rust with AI Agents*
-- *Creating System Design Documents with AI: A Practical Guide*
-- *Loop Engineering: Designing Automated Feedback for AI Coding Agents*
-- *Spec-Driven Development: Why Planning Matters More Than Ever with AI*
-- *Harness Engineering: Building Safe and Reliable Tooling for AI*
+- *One Hotel Design, Five AI Implementations:* Part I ([Quality After Forks and Rewrites](https://marcelomiyake.com.br/posts/five-ai-hotel-implementations/)) & Part II ([The Cost of a New Feature](https://marcelomiyake.com.br/posts/five-ai-hotel-implementations-part-2/))
+- [*Cheaper Models and a Strong Harness*](https://marcelomiyake.com.br/posts/cheaper-models-strong-harness/): Building Distributed Systems in Rust with AI Agents
+- [*Creating System Design Documents with AI*](https://marcelomiyake.com.br/posts/ai-system-design-documents/): A Practical Guide
+- [*AI Gateways and Model Routing*](https://marcelomiyake.com.br/posts/ai-gateway-routing/): Choosing Models and Enforcing Policies
+- *Guide for AI Agents Series:* [Prompt Engineering](https://marcelomiyake.com.br/posts/prompt-engineering/) · [Context Engineering](https://marcelomiyake.com.br/posts/context-engineering/) · [Harness Engineering](https://marcelomiyake.com.br/posts/harness-engineering/) · [Spec-Driven Development](https://marcelomiyake.com.br/posts/spec-driven-development/) · [Loop Engineering](https://marcelomiyake.com.br/posts/loop-engineering/)
 
 ## Recognition & Education
 
