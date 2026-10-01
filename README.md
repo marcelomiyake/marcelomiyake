@@ -1,4 +1,4 @@
-# Marcelo Miyake
+# 100% AI-Generated (Judge Me!)
 
 **Software Engineering Specialist & Systems Architect** based in São Paulo, Brazil.  
 I have more than 20 years of software engineering experience, including over 13 years at Atech building mission-critical defense, avionics, and air traffic management systems. My work focuses on reliable distributed systems and AI engineering.
