@@ -1,15 +1,46 @@
-# 100% AI-Generated (Judge Me!)
+# Software architecture, distributed systems & AI in practice
 
-**Software Engineering Specialist & Systems Architect** based in São Paulo, Brazil.  
-I have more than 20 years of software engineering experience, including over 13 years at Atech building mission-critical defense, avionics, and air traffic management systems. My work focuses on reliable distributed systems and AI engineering.
+This GitHub is my workspace for engineering experiments and reference implementations: distributed services, cloud deployment, and AI coding workflows. You'll find code alongside specifications, architecture decisions, and verification records.
 
-This README, all of my repositories, and my personal blog are written entirely with AI.
+To be clear: **my goal lately isn't to use GitHub to build production-ready projects**. Over the last few months, I have wanted to improve the process for working with AI tools and practices—testing spec-driven approaches, agent harnesses, and bounded feedback loops—and seeing whether it is possible to get good results with cheap models.
 
-## Current Work
+All of these projects include guardrails for code quality, and **all of them were deployed on Kubernetes**. Most repositories feature real screenshots of the systems running in the cluster. That said, **they probably have plenty of bugs!** Passing local quality gates and spinning up in a test cluster does not mean production reliability; they are practical sandboxes for studying system design, failure modes, and AI developer workflows.
 
-- **AI Harness & Context Engineering:** Building bounded feedback loops, Model Context Protocol (MCP) integrations, sandboxed tooling, and automated test-verification for autonomous coding agents.
-- **Spec-Driven Development (SDD):** Combining formal architecture briefs, C4 modeling, and OpenAPI contracts with AI-driven implementation pipelines.
-- **Mission-Critical Systems:** Decades of experience in DO-178B avionics standards, ICAO-compliant air traffic systems, and fault-tolerant distributed services in Rust, C/C++, Go, and Kubernetes.
+My background spans more than 20 years in software engineering, including mission-critical systems at Atech. That experience connects these experiments with the questions I care about: what the software must preserve, how its parts interact, and what evidence supports a design decision.
+
+[Read the case studies](https://marcelomiyake.com.br/) · [Professional background](https://www.linkedin.com/in/marcelomiyake/)
+
+## What You'll Find Here
+
+| Work | What it shows about my approach |
+| :--- | :--- |
+| **Five AI-built hotel systems** — [Quality study](https://marcelomiyake.com.br/posts/five-ai-hotel-implementations/) · [Maintenance study](https://marcelomiyake.com.br/posts/five-ai-hotel-implementations-part-2/) | I compare architectures by inspecting business behavior, reproducing concurrency defects, and checking whether a new feature answers the original business question. |
+| **[Rust + Vue microservices template](https://github.com/marcelomiyake/microservices-template)** | I connect application structure, API contracts, architecture decisions, agent guidance, and local Kubernetes deployment in one reference project. |
+| **[Autonomous Rust solver pipeline](https://github.com/marcelomiyake/autonomous-rust-leetcode-solver-pipeline)** | I explore coding automation through bounded repair loops, compiler feedback, credential handling, and gated publication in an educational workflow. |
+| **[Notification system](https://github.com/marcelomiyake/notification-system)** | I examine delivery behavior through idempotency, outbox dispatch, retries, and delivery history, using local recording adapters. |
+
+These public projects are learning and reference implementations. Their documentation identifies local verification results and remaining production requirements.
+
+## Engineering Approach
+
+- **Start with the business behavior:** make requirements, invariants, and acceptance criteria explicit before judging an implementation.
+- **Connect the whole system:** consider APIs, data ownership, concurrency, failure handling, and deployment alongside application code.
+- **Use AI with an engineering feedback loop:** combine context, contracts, compiler feedback, and bounded repair loops with verification of the resulting behavior.
+- **Make decisions inspectable:** document architectural trade-offs, reproducible checks, and the limits of the evidence so others can review and build on the work.
+
+The case studies and reference projects above put these concerns into concrete examples. I share them in English and Portuguese.
+
+## Experience Behind the Work
+
+**Software Engineering Specialist & Systems Architect · São Paulo, Brazil**
+
+My experience includes over 13 years at Atech and earlier work in banking systems:
+
+- Led full-stack development of a new air traffic management interface using Spring Boot and Vue.js.
+- Developed and maintained air traffic control and simulation training systems using C, Java, and DDS, working with ICAO standards.
+- Designed GCP cloud infrastructure in Go for Embraer's Digital Defense project.
+- Collaborated with Airbus engineers on C++ embedded software for the EC725 helicopter under DO-178B requirements.
+- Earlier work includes ATM and PIN Pad software, ISO 8583 transaction processing, and banking systems.
 
 ## Technologies & Domains
 
@@ -20,15 +51,9 @@ This README, all of my repositories, and my personal blog are written entirely w
 | **AI Engineering** | Harness Engineering, MCP, AI Gateways, Model Routing, Prompt/Context Design |
 | **Mission-Critical & Industry** | Air Traffic Management (ICAO), Avionics (DO-178B), Banking/ATM (ISO 8583) |
 
-## Articles & Essays
+## AI Authorship & Evidence
 
-I publish articles on software architecture and AI engineering at [marcelomiyake.com.br](https://marcelomiyake.com.br/):
-
-- *One Hotel Design, Five AI Implementations:* Part I ([Quality After Forks and Rewrites](https://marcelomiyake.com.br/posts/five-ai-hotel-implementations/)) & Part II ([The Cost of a New Feature](https://marcelomiyake.com.br/posts/five-ai-hotel-implementations-part-2/))
-- [*Cheaper Models and a Strong Harness*](https://marcelomiyake.com.br/posts/cheaper-models-strong-harness/): Building Distributed Systems in Rust with AI Agents
-- [*Creating System Design Documents with AI*](https://marcelomiyake.com.br/posts/ai-system-design-documents/): A Practical Guide
-- [*AI Gateways and Model Routing*](https://marcelomiyake.com.br/posts/ai-gateway-routing/): Choosing Models and Enforcing Policies
-- *Guide for AI Agents Series:* [Prompt Engineering](https://marcelomiyake.com.br/posts/prompt-engineering/) · [Context Engineering](https://marcelomiyake.com.br/posts/context-engineering/) · [Harness Engineering](https://marcelomiyake.com.br/posts/harness-engineering/) · [Spec-Driven Development](https://marcelomiyake.com.br/posts/spec-driven-development/) · [Loop Engineering](https://marcelomiyake.com.br/posts/loop-engineering/)
+This README, my blog articles, and the code in my public repositories are generated with AI. The case studies document source revisions, executed checks, reported measurements, and limitations. They distinguish observed behavior from claims and hypotheses; passing a local quality gate does not establish production reliability.
 
 ## Recognition & Education
 
