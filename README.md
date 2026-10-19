@@ -1,69 +1,30 @@
 # Software architecture, distributed systems & AI in practice
 
-This GitHub is my workspace for engineering experiments and reference implementations: distributed services, cloud deployment, and AI coding workflows. You'll find code alongside specifications, architecture decisions, and verification records.
+I'm Marcelo Miyake, a Software Engineering Specialist and Systems Architect at Atech in São Paulo, Brazil. I have spent more than 20 years building mission-critical software for air traffic management, avionics, and banking. Now I study how AI coding agents can deliver systems that hold up to the same scrutiny.
 
-To be clear: **my goal lately isn't to use GitHub to build production-ready projects**. Over the last few months, I have wanted to improve the process for working with AI tools and practices—testing spec-driven approaches, agent harnesses, and bounded feedback loops—and seeing whether it is possible to get good results with cheap models.
+## Selected work
 
-All of these projects include guardrails for code quality, and **all of them were deployed on Kubernetes**. Most repositories feature real screenshots of the systems running in the cluster. That said, **they probably have plenty of bugs!** Passing local quality gates and spinning up in a test cluster does not mean production reliability; they are practical sandboxes for studying system design, failure modes, and AI developer workflows.
-
-My background spans more than 20 years in software engineering, including mission-critical systems at Atech. That experience connects these experiments with the questions I care about: what the software must preserve, how its parts interact, and what evidence supports a design decision.
-
-[Read the case studies](https://marcelomiyake.com.br/) · [Professional background](https://www.linkedin.com/in/marcelomiyake/)
-
-## What You'll Find Here
-
-| Work | What it shows about my approach |
+| Project | What it shows |
 | :--- | :--- |
-| **Five AI-built hotel systems** — [Quality study](https://marcelomiyake.com.br/posts/five-ai-hotel-implementations/) · [Maintenance study](https://marcelomiyake.com.br/posts/five-ai-hotel-implementations-part-2/) | I compare architectures by inspecting business behavior, reproducing concurrency defects, and checking whether a new feature answers the original business question. |
-| **[Rust + Vue microservices template](https://github.com/marcelomiyake/microservices-template)** | I connect application structure, API contracts, architecture decisions, agent guidance, and local Kubernetes deployment in one reference project. |
-| **[Autonomous Rust solver pipeline](https://github.com/marcelomiyake/autonomous-rust-leetcode-solver-pipeline)** | I explore coding automation through bounded repair loops, compiler feedback, credential handling, and gated publication in an educational workflow. |
-| **[Notification system](https://github.com/marcelomiyake/notification-system)** | I examine delivery behavior through idempotency, outbox dispatch, retries, and delivery history, using local recording adapters. |
+| **[One hotel design, five AI implementations](https://marcelomiyake.com.br/posts/five-ai-hotel-implementations/)** · [Rust greenfield repo](https://github.com/marcelomiyake/hotel-rust-greenfield) | AI built the same hotel system five ways. Testing the business behavior showed two versions releasing inventory twice under overlapping cancellations, and two Java versions that pass their tests but don't start as packaged. |
+| **[prompt-dialect](https://github.com/marcelomiyake/prompt-dialect)** | A Claude Code plugin that checks grammar as you type and rewrites prompts for the model in use. |
+| **[Autonomous Rust solver](https://github.com/marcelomiyake/autonomous-rust-leetcode-solver-pipeline)** | A daily pipeline: Gemini Flash writes Rust, compiler feedback drives a bounded repair loop, and only code that passes the quality gates is published. |
+| **[OpenTube](https://github.com/marcelomiyake/opentube)** | A video MVP with Rust services, RabbitMQ, MinIO, HLS transcoding, and web, Android, and TV clients. |
+| **[Web crawler](https://github.com/marcelomiyake/web-crawler)** | A bounded HTML archiver with a PostgreSQL frontier, robots.txt handling, and SSRF-safe fetching. |
 
-These public projects are learning and reference implementations. Their documentation identifies local verification results and remaining production requirements.
+More, deployed to a local Kind cluster: [notification system](https://github.com/marcelomiyake/notification-system), [URL shortener](https://github.com/marcelomiyake/url-shortener), [search autocomplete](https://github.com/marcelomiyake/search-autocomplete-system), [microservices template](https://github.com/marcelomiyake/microservices-template).
 
-## Engineering Approach
+## Experience
 
-- **Start with the business behavior:** make requirements, invariants, and acceptance criteria explicit before judging an implementation.
-- **Connect the whole system:** consider APIs, data ownership, concurrency, failure handling, and deployment alongside application code.
-- **Use AI with an engineering feedback loop:** combine context, contracts, compiler feedback, and bounded repair loops with verification of the resulting behavior.
-- **Make decisions inspectable:** document architectural trade-offs, reproducible checks, and the limits of the evidence so others can review and build on the work.
+- Air traffic management at Atech: led full-stack development of a new interface (Spring Boot, Vue.js); built control and training systems in C, Java, and DDS under ICAO standards.
+- GCP infrastructure in Go for Embraer's Digital Defense project; C++ avionics for the EC725 helicopter under DO-178B; earlier, ISO 8583 banking systems.
 
-The case studies and reference projects above put these concerns into concrete examples. I share them in English and Portuguese.
+**Across my career:** C, C++, Java, Go, Python, TypeScript · GCP, Kubernetes, Istio, Helm, DDS. **In public repos:** Rust, TypeScript, Kotlin, Python · Kind, PostgreSQL, Cassandra, RabbitMQ.
 
-## Experience Behind the Work
+MBA, FGV · 2nd place, NASA Space Apps Challenge São Paulo 2019 · [Full background and approach](https://marcelomiyake.com.br/about/)
 
-**Software Engineering Specialist & Systems Architect · São Paulo, Brazil**
+## AI authorship
 
-My experience includes over 13 years at Atech and earlier work in banking systems:
+My public code and blog articles are generated with AI. They are learning and reference implementations, not production systems; the case studies record what was checked, what failed, and what remains unverified.
 
-- Led full-stack development of a new air traffic management interface using Spring Boot and Vue.js.
-- Developed and maintained air traffic control and simulation training systems using C, Java, and DDS, working with ICAO standards.
-- Designed GCP cloud infrastructure in Go for Embraer's Digital Defense project.
-- Collaborated with Airbus engineers on C++ embedded software for the EC725 helicopter under DO-178B requirements.
-- Earlier work includes ATM and PIN Pad software, ISO 8583 transaction processing, and banking systems.
-
-## Technologies & Domains
-
-| Domain | Technologies & Standards |
-| :--- | :--- |
-| **Languages** | Rust, C, C++, Go, Java (Spring Boot), Python, TypeScript |
-| **Cloud & Distributed Systems** | Kubernetes, GCP, Docker, Istio, DDS, Helm, Microservices |
-| **AI Engineering** | Harness Engineering, MCP, AI Gateways, Model Routing, Prompt/Context Design |
-| **Mission-Critical & Industry** | Air Traffic Management (ICAO), Avionics (DO-178B), Banking/ATM (ISO 8583) |
-
-## AI Authorship & Evidence
-
-This README, my blog articles, and the code in my public repositories are generated with AI. The case studies document source revisions, executed checks, reported measurements, and limitations. They distinguish observed behavior from claims and hypotheses; passing a local quality gate does not establish production reliability.
-
-## Recognition & Education
-
-- **2nd Place** — NASA International Space Apps Challenge (São Paulo, 2019)
-- **MBA in Business Management** — FGV
-- **Web Development & Electronics** — UNIBTA / Liceu de Artes e Ofícios de São Paulo
-
-## Contact
-
-- Blog: [marcelomiyake.com.br](https://marcelomiyake.com.br/)
-- LinkedIn: [linkedin.com/in/marcelomiyake](https://www.linkedin.com/in/marcelomiyake/)
-- X: [@MarceloMIYAKE](https://twitter.com/MarceloMIYAKE)
-- Email: [marcelo.m.miyake@gmail.com](mailto:marcelo.m.miyake@gmail.com)
+[Blog, in English and Portuguese](https://marcelomiyake.com.br/) · [LinkedIn](https://www.linkedin.com/in/marcelomiyake/) · [X](https://twitter.com/MarceloMIYAKE) · [Email](mailto:marcelo.m.miyake@gmail.com)
