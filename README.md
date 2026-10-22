@@ -6,13 +6,13 @@ I'm Marcelo Miyake, a Software Engineering Specialist and Systems Architect at A
 
 | Project | What it shows |
 | :--- | :--- |
+| **[Nodes vs. pixels](https://marcelomiyake.com.br/posts/ai-adrs-webassembly-nodes-vs-pixels/)** · [repo](https://github.com/marcelomiyake/nodes-vs-pixels) | AI built the same sign-up form twice: React DOM nodes, and Rust WebAssembly painting every pixel of one canvas. Matching the DOM took about 7 times the code and AI tokens; the canvas used up to 17 times the GPU memory and lost IME, autofill, and screen-reader support. |
 | **[One hotel design, five AI implementations](https://marcelomiyake.com.br/posts/five-ai-hotel-implementations/)** · [Rust greenfield repo](https://github.com/marcelomiyake/hotel-rust-greenfield) | AI built the same hotel system five ways. Testing the business behavior showed two versions releasing inventory twice under overlapping cancellations, and two Java versions that pass their tests but don't start as packaged. |
 | **[prompt-dialect](https://github.com/marcelomiyake/prompt-dialect)** | A Claude Code plugin that checks grammar as you type and rewrites prompts for the model in use. |
 | **[Autonomous Rust solver](https://github.com/marcelomiyake/autonomous-rust-leetcode-solver-pipeline)** | A daily pipeline: Gemini Flash writes Rust, compiler feedback drives a bounded repair loop, and only code that passes the quality gates is published. |
 | **[OpenTube](https://github.com/marcelomiyake/opentube)** | A video MVP with Rust services, RabbitMQ, MinIO, HLS transcoding, and web, Android, and TV clients. |
-| **[Web crawler](https://github.com/marcelomiyake/web-crawler)** | A bounded HTML archiver with a PostgreSQL frontier, robots.txt handling, and SSRF-safe fetching. |
 
-More, deployed to a local Kind cluster: [notification system](https://github.com/marcelomiyake/notification-system), [URL shortener](https://github.com/marcelomiyake/url-shortener), [search autocomplete](https://github.com/marcelomiyake/search-autocomplete-system), [microservices template](https://github.com/marcelomiyake/microservices-template).
+More, deployed to a local Kind cluster: [web crawler](https://github.com/marcelomiyake/web-crawler), [notification system](https://github.com/marcelomiyake/notification-system), [URL shortener](https://github.com/marcelomiyake/url-shortener), [search autocomplete](https://github.com/marcelomiyake/search-autocomplete-system), [microservices template](https://github.com/marcelomiyake/microservices-template).
 
 ## Experience
 
