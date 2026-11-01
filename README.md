@@ -6,9 +6,10 @@ I'm Marcelo Miyake, a Software Engineering Specialist and Systems Architect at A
 
 | Project | What it shows |
 | :--- | :--- |
+| **[GeoToon](https://github.com/marcelomiyake/geotoon)** | Type an address and walk a cel-shaded 3D map of the streets around it, built from Overture Maps and OpenStreetMap data with PostGIS and Three.js. Claude Code planned and wrote the first version in about six hours on a US$20/month Pro plan; the same tokens would cost about US$60 at API prices. |
 | **[Nodes vs. pixels](https://marcelomiyake.com.br/posts/ai-adrs-webassembly-nodes-vs-pixels/)** · [repo](https://github.com/marcelomiyake/nodes-vs-pixels) | AI built the same sign-up form twice: React DOM nodes, and Rust WebAssembly painting every pixel of one canvas. Matching the DOM took about 7 times the code and AI tokens; the canvas used up to 17 times the GPU memory and lost IME, autofill, and screen-reader support. |
 | **[One hotel design, five AI implementations](https://marcelomiyake.com.br/posts/five-ai-hotel-implementations/)** · [Rust greenfield repo](https://github.com/marcelomiyake/hotel-rust-greenfield) | AI built the same hotel system five ways. Testing the business behavior showed two versions releasing inventory twice under overlapping cancellations, and two Java versions that pass their tests but don't start as packaged. |
-| **[prompt-dialect](https://github.com/marcelomiyake/prompt-dialect)** | A Claude Code plugin that checks grammar as you type and rewrites prompts for the model in use. |
+| **[prompt-dialect](https://github.com/marcelomiyake/prompt-dialect)** · **[usage-hud](https://github.com/marcelomiyake/usage-hud)** | Claude Code plugins. prompt-dialect checks grammar as you type and rewrites prompts for the model in use; usage-hud shows the context window and the 5-hour and weekly usage limits in the status line. |
 | **[Autonomous Rust solver](https://github.com/marcelomiyake/autonomous-rust-leetcode-solver-pipeline)** | A daily pipeline: Gemini Flash writes Rust, compiler feedback drives a bounded repair loop, and only code that passes the quality gates is published. |
 | **[OpenTube](https://github.com/marcelomiyake/opentube)** | A video MVP with Rust services, RabbitMQ, MinIO, HLS transcoding, and web, Android, and TV clients. |
 
@@ -19,7 +20,7 @@ More, deployed to a local Kind cluster: [web crawler](https://github.com/marcelo
 - Air traffic management at Atech: led full-stack development of a new interface (Spring Boot, Vue.js); built control and training systems in C, Java, and DDS under ICAO standards.
 - GCP infrastructure in Go for Embraer's Digital Defense project; C++ avionics for the EC725 helicopter under DO-178B; earlier, ISO 8583 banking systems.
 
-**Across my career:** C, C++, Java, Go, Python, TypeScript · GCP, Kubernetes, Istio, Helm, DDS. **In public repos:** Rust, TypeScript, Kotlin, Python · Kind, PostgreSQL, Cassandra, RabbitMQ.
+**Across my career:** C, C++, Java, Go, Python, TypeScript · GCP, Kubernetes, Istio, Helm, DDS. **In public repos:** Rust, TypeScript, Kotlin, Python · Kind, PostgreSQL/PostGIS, Cassandra, RabbitMQ, Three.js.
 
 MBA, FGV · 2nd place, NASA Space Apps Challenge São Paulo 2019 · [Full background and approach](https://marcelomiyake.com.br/about/)
 
